@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>空想彼方</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2017-03-30T11:49:06.000Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>saittoo</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>读书笔记《JSON必知必会》</title>
+    <link href="http://yoursite.com/2017/03/29/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0%E3%80%8AJSON%E5%BF%85%E7%9F%A5%E5%BF%85%E4%BC%9A%E3%80%8B/"/>
+    <id>http://yoursite.com/2017/03/29/读书笔记《JSON必知必会》/</id>
+    <published>2017-03-29T07:07:17.000Z</published>
+    <updated>2017-03-30T11:49:06.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="什么是JSON"><a href="#什么是JSON" class="headerlink" title="什么是JSON"></a>什么是JSON</h2><p>JSON是一种数据交换格式<br>json的全称是JavaScript Object Notation（JavaScript对象表示法）  </p><a id="more"></a><h2 id="JSON语法"><a href="#JSON语法" class="headerlink" title="JSON语法"></a>JSON语法</h2><p>JSON基于JavaScript对象字面量<br>机器如何读取数据的指令：  </p><ul><li>{（左花括号）指“开始读取对象”</li><li>}（右花括号）指“结束读取对象”</li><li>[（左方括号）指“开始读取数组”</li><li>]（右方括号）指“结束读取数组”</li><li>:（冒号）指“在名称 - 值对中分隔名称和值”</li><li>,（逗号）指“分隔对象中的名称 - 值对”或者“分隔数组中的值”；也可以认为是“一个新部分的开始”  </li></ul><h2 id="JSON的数据类型"><a href="#JSON的数据类型" class="headerlink" title="JSON的数据类型"></a>JSON的数据类型</h2><p>JSON中的对象数据类型  </p><pre><code class="javascript">{    <span class="string">"person"</span>:{        <span class="string">"name"</span>:<span class="string">"Lindsay Bassett"</span>,        <span class="string">"heightInInche"</span>:<span class="number">66</span>,        <span class="string">"head"</span>:{            <span class="string">"hair"</span>:{                <span class="string">"color"</span>:<span class="string">"light blond"</span>,                <span class="string">"length"</span>:<span class="string">"short"</span>,                <span class="string">"style"</span>:<span class="string">"A-line"</span>            },            <span class="string">"eye"</span>:<span class="string">"green"</span>        }    }}</code></pre><p>JSON中的字符串类型<br><em>字符串两边必须被双引号包裹</em></p><pre><code class="javascript">{<span class="string">"animal"</span>:<span class="string">"cat"</span>}</code></pre><p>JSON中的数字类型  </p><pre><code class="javascript">{    <span class="string">"widgetInventory"</span>:<span class="number">289</span>,    <span class="string">"sadSavingsAccount"</span>:<span class="number">22.59</span>,    <span class="string">"seattleLongitude"</span>:<span class="number">-122.332071</span>,    <span class="string">"earthsMass"</span>:<span class="number">5.97219e+24</span>}</code></pre><p>JSON中的布尔类型  </p><pre><code class="javascript">{    <span class="string">"toastWithBreakfast"</span>：<span class="literal">false</span>,    <span class="string">"breadWithLunch"</span>:<span class="string">"true"</span>}</code></pre><p>JSON中的null类型  </p><pre><code class="javascript">{    <span class="string">"freckleCount"</span>:<span class="number">1</span>,    <span class="string">"hairy"</span>:<span class="literal">true</span>,    <span class="string">"watchColor"</span>:<span class="literal">null</span>}</code></pre><p>JSON中的数组类型  </p><pre><code class="javascript">{    <span class="string">"eggCarton"</span>:[        <span class="string">"egg"</span>,        <span class="string">"egg"</span>,        <span class="string">"egg"</span>,        <span class="string">"egg"</span>,        <span class="string">"egg"</span>    ]}</code></pre><h2 id="JSON-Schema"><a href="#JSON-Schema" class="headerlink" title="JSON Schema"></a>JSON Schema</h2><p>验证猫的JSON  </p><pre><code class="javascript">{    <span class="string">"$schema"</span>:<span class="string">"http://json-schema.org/draft-04/schema#"</span>,    <span class="string">"title"</span>:<span class="string">"Cat"</span>,    <span class="string">"properties"</span>:{        <span class="string">"name"</span>:{            <span class="string">"type"</span>:<span class="string">"string"</span>,            <span class="string">"minLength"</span>:<span class="number">3</span>,            <span class="string">"maxLength"</span>:<span class="number">20</span>        },        <span class="string">"age"</span>:{            <span class="string">"type"</span>:<span class="string">"number"</span>,            <span class="string">"description"</span>:<span class="string">"You cat's age in years."</span>,            <span class="string">"minimum"</span>:<span class="number">0</span>        },        <span class="string">"declawed"</span>:{            <span class="string">"type"</span>:<span class="string">"boolean"</span>        },        <span class="string">"description"</span>:{            <span class="string">"type"</span>:<span class="string">"string"</span>        }    },    <span class="string">"required"</span>:[        <span class="string">"name"</span>,        <span class="string">"age"</span>,        <span class="string">"declawed"</span>    ]}</code></pre><h2 id="JSON中的安全问题"><a href="#JSON中的安全问题" class="headerlink" title="JSON中的安全问题"></a>JSON中的安全问题</h2><p>不要使用顶层JSON数组，如  </p><pre><code class="javascript">[    {        <span class="string">"user"</span>:<span class="string">"bobbarker"</span>    },    {        <span class="string">"phone"</span>:<span class="string">"555-555-5555"</span>    }]</code></pre><p>将数组作为一个值存入JSON对象，这样数组将不再是合法的Javascript。  </p><pre><code class="javascript">{    <span class="string">"info"</span>:[        {            <span class="string">"user"</span>:<span class="string">"bobbarker"</span>        },        {            <span class="string">"phone"</span>:<span class="string">"555-555-5555"</span>        }    ]}</code></pre><p>仅允许POST请求获取数据<br>使用JSON.parse()代替eval()  </p><pre><code class="javascript"><span class="comment">//eval()函数获取一段字符串，并对其进行编译于执行</span><span class="keyword">var</span> jsonString = <span class="string">"alert('this is bad')"</span>;<span class="keyword">var</span> myObject = <span class="built_in">eval</span>(<span class="string">"("</span> + jsonString + <span class="string">")"</span>);<span class="comment">//执行alert()函数并弹出“this is bad”</span></code></pre><pre><code class="javascript"><span class="comment">//JSON.parse()函数仅会解析JSON，并不会执行脚本</span><span class="keyword">var</span> jsonString = <span class="string">'{"animal":"cat"}'</span>;<span class="keyword">var</span> myObject = <span class="built_in">JSON</span>.parse(jsonString);alert(myObject.animal);</code></pre><p>当需要将JavaScript对象的message属性直接显示在HTML中时，将消息中所有的HTML字符进行转码，如 div 转换成 &lt;div&gt; 然后插入页面。   </p><h2 id="JavaScript中的XMLHttpRequest与Web-API"><a href="#JavaScript中的XMLHttpRequest与Web-API" class="headerlink" title="JavaScript中的XMLHttpRequest与Web API"></a>JavaScript中的XMLHttpRequest与Web API</h2><p>对象的序列化与反序列化  </p><pre><code class="javascript"><span class="comment">//JSON响应的反序列化</span><span class="keyword">var</span> myObject = <span class="built_in">JSON</span>.parse(myXMLHttpRequest.responseText);<span class="comment">//对象的序列化</span><span class="keyword">var</span> myJSON = <span class="built_in">JSON</span>.stringify(myObject);</code></pre><h2 id="JSON与客户端框架"><a href="#JSON与客户端框架" class="headerlink" title="JSON与客户端框架"></a>JSON与客户端框架</h2><p>老版的IE、火狐和Chrome并不支持JSON.parse()方法  </p><pre><code class="javascript"><span class="comment">//使用JQuery内置的Jquery.parseJSON来解析JSON</span><span class="keyword">var</span> myAnimal = jQuery.parseJSON(<span class="string">'{"animal":"cat"}'</span>);</code></pre><h2 id="JSON与NOSQL"><a href="#JSON与NOSQL" class="headerlink" title="JSON与NOSQL"></a>JSON与NOSQL</h2><hr><h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><p>《JSON必知必会》</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;什么是JSON&quot;&gt;&lt;a href=&quot;#什么是JSON&quot; class=&quot;headerlink&quot; title=&quot;什么是JSON&quot;&gt;&lt;/a&gt;什么是JSON&lt;/h2&gt;&lt;p&gt;JSON是一种数据交换格式&lt;br&gt;json的全称是JavaScript Object Notation（JavaScript对象表示法）  &lt;/p&gt;
+    
+    </summary>
+    
+      <category term="读书笔记" scheme="http://yoursite.com/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="JSON" scheme="http://yoursite.com/tags/JSON/"/>
+    
+      <category term="JavaScript" scheme="http://yoursite.com/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>关于CSS优先级</title>
+    <link href="http://yoursite.com/2017/01/24/%E5%85%B3%E4%BA%8ECSS%E4%BC%98%E5%85%88%E7%BA%A7/"/>
+    <id>http://yoursite.com/2017/01/24/关于CSS优先级/</id>
+    <published>2017-01-24T14:54:38.000Z</published>
+    <updated>2017-03-30T11:37:34.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="CSS优先级"><a href="#CSS优先级" class="headerlink" title="CSS优先级"></a>CSS优先级</h2><p>CSS支持给同一元素多次设置相同的规则，这就是所谓竞争规则。浏览器使用层叠顺序来确定一组竞争规则中真正生效的规则。例如，浏览器会给每一个元素设置默认规则。当给一个元素设置规则时，这个规则会与默认规则竞争，但是由于它具有较高的层叠优先级，所以它会覆盖默认规则。  </p><a id="more"></a><p>层叠顺序会根据规则使用的选择器类型将规则划分为6组。高优先级分组的规则将覆盖低优先级分组的竞争规则。这些分组按照各个选择器的特殊性进行划分。优先级越低，那么这一分组的选择器的特殊性越低。<br>下面是优先级由高到低排列的6种选择器分组。  </p><ol><li>添加了<code>!important</code>规则的分组享有最高优先级。它们会覆盖所有不带<code>!important</code>的规则。<br>例如，<code>#i100{border:6px solid back!important}</code>的优先级高于<code>#i100{border:6px solid back}</code>。  </li><li>第二优先级分组是style属性所嵌入的规则。由于使用style属性的代码难于维护，所以不推荐使用这种方法。<br>例如，<code>&lt;div style=&quot;border:2px solid back;&quot;&gt;&lt;/div&gt;</code>  </li><li>第三优先级分组是具有一个或者多个ID选择器的规则。<br>例如，<code>#i100{border:6px solid back}</code>的优先级高于<code>*.c10{border:4px solid back}</code>。  </li><li>第四优先级分组是具有一个或多个类、属性或者伪选择器的规则。<br>例如，<code>*.c10{border:4px solid back}</code>优先级高于<code>div{border:2px solid back}</code>。  </li><li>第五优先级分组是具有一个或多个元素选择器的规则。<br>例如，<code>div{border:2px solid back}</code>优先级高于<code>*{border:0px solid back}</code>。</li><li>最低优先级分组是指那些只包含通配选择器的规则。<br>例如<code>*{border:0px solid back}</code>。  </li></ol><p>如果竞争规则属于同一个选择器分组，那么它们的优先级会进一步根据选择器的类型和数量进行比较。如果一个一个选择器比竞争选择器<strong>具有更多高优先级选择器</strong>，那么这个选择器的优先级就更高。<br>例如，<code>#i100 *.c20 *.c10{}</code>的优先级高于<code>#i100 *.c10 div p span em{}</code>。  </p><blockquote><p>总结 !important &gt; 行内样式 &gt; ID &gt; 类、属性、伪选择器 &gt; 元素 &gt; 通配选择器*  </p></blockquote><p>如果竞争规则属于相同的选择器分组，并具有相同的数量和级别的选择器，那么它们会进一步按照位置进行优先级比较。所有属于高优先级位置的规则会覆盖低优先级位置的规则。  </p><ol><li>最高优先级的位置是HTML文档头部的<code>&lt;style&gt;</code>元素。  </li><li>第二优先级的位置是<code>&lt;style&gt;</code>元素中<code>@import</code>语句所导入的样式表。  </li><li>第三优先级的位置是<code>&lt;link&gt;</code>元素附加的样式表。  </li><li>第四优先级的位置是<code>&lt;link&gt;</code>元素附加的样式表中<code>@import</code>语句所导入的样式表。  </li><li>第五优先级的位置是最终用户附加的样式表。<br>有一种例外情况是最终用户附加样式表中的<code>!important</code>规则。这些规则具有<strong>最高优先级</strong>。这样用户就能够创建一些规则，覆盖初始样式表中的竞争规则。  </li><li>最低优先级的位置是浏览器提供的默认样式表。  </li></ol><blockquote><p>总结 <code>&lt;style&gt;</code> &gt; <code>&lt;style&gt;</code>内<code>@import</code> &gt; <code>&lt;link&gt;</code> &gt; <code>&lt;link&gt;</code>内<code>@import</code> &gt; 用户附加的样式表 &gt; 默认样式表  </p></blockquote><blockquote><p>实际上<code>&lt;style&gt;</code>与<code>&lt;link&gt;</code>，位于后面的优先级高。位于同一<code>&lt;style&gt;</code>内，元素内的规则高于<code>@import</code>语句所导入的样式表，而不同的<code>&lt;style&gt;</code>元素，后面<code>&lt;style&gt;</code>内的<code>@import</code>导入的样式表高于前面的<code>&lt;style&gt;</code>元素内的规则。<code>&lt;link&gt;</code>与<code>@import</code>的关系同上。</p></blockquote><p>如果在同一个位置级别上附加或导入了多个样式表，那么它们的优先级由附加的顺序决定。后面附加的样式表将覆盖前面附加的样式表。<br>如果竞争规则属于同一个选择器分组，具有相同数量和等级的选择器，并且具有相同的位置级别，那么代码中位置较后的规则会覆盖前面的规则。  </p><hr><h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><p>《HTML5与CSS3设计模式》</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;CSS优先级&quot;&gt;&lt;a href=&quot;#CSS优先级&quot; class=&quot;headerlink&quot; title=&quot;CSS优先级&quot;&gt;&lt;/a&gt;CSS优先级&lt;/h2&gt;&lt;p&gt;CSS支持给同一元素多次设置相同的规则，这就是所谓竞争规则。浏览器使用层叠顺序来确定一组竞争规则中真正生效的规则。例如，浏览器会给每一个元素设置默认规则。当给一个元素设置规则时，这个规则会与默认规则竞争，但是由于它具有较高的层叠优先级，所以它会覆盖默认规则。  &lt;/p&gt;
+    
+    </summary>
+    
+      <category term="读书笔记" scheme="http://yoursite.com/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="CSS" scheme="http://yoursite.com/tags/CSS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>搭建hexo</title>
+    <link href="http://yoursite.com/2016/01/24/%E6%90%AD%E5%BB%BAhexo/"/>
+    <id>http://yoursite.com/2016/01/24/搭建hexo/</id>
+    <published>2016-01-24T15:08:25.000Z</published>
+    <updated>2016-06-25T08:30:26.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>搭建hexo花了挺多时间，记录一下，可能以后会用到<a id="more"></a></p><h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><hr><p><a href="http://www.isetsuna.com/categories/Hexo/" target="_blank" rel="noopener">hexo系列教程</a><br><a href="http://www.zipperary.com/categories/hexo/" target="_blank" rel="noopener">hexo系列教程</a><br><a href="http://www.tuicool.com/articles/AfQnQjy/" target="_blank" rel="noopener">hexo你的博客</a><br><a href="http://ninghao.net/blog/1412" target="_blank" rel="noopener">使用 Hexo 生成一套静态博客网页</a><br><a href="http://segmentfault.com/a/1190000000458953" target="_blank" rel="noopener">使用Github搭建静态博客（Hexo）</a><br><a href="http://www.jianshu.com/p/70343b7c2fd3" target="_blank" rel="noopener">Hexo 主题Light修改教程</a><br><a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="noopener">next主题</a><br><a href="http://blog.csdn.net/willxue123/article/details/50994852" target="_blank" rel="noopener">next主题的配置和优化</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;搭建hexo花了挺多时间，记录一下，可能以后会用到
+    
+    </summary>
+    
+      <category term="境界彼方" scheme="http://yoursite.com/categories/%E5%A2%83%E7%95%8C%E5%BD%BC%E6%96%B9/"/>
+    
+    
+  </entry>
+  
+</feed>
