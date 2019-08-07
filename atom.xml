@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="https://saittoo.github.io/"/>
   <updated>2017-03-30T11:49:06.000Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>https://saittoo.github.io/</id>
   
   <author>
     <name>saittoo</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>读书笔记《JSON必知必会》</title>
-    <link href="http://yoursite.com/2017/03/29/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0%E3%80%8AJSON%E5%BF%85%E7%9F%A5%E5%BF%85%E4%BC%9A%E3%80%8B/"/>
-    <id>http://yoursite.com/2017/03/29/读书笔记《JSON必知必会》/</id>
+    <link href="https://saittoo.github.io/2017/03/29/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0%E3%80%8AJSON%E5%BF%85%E7%9F%A5%E5%BF%85%E4%BC%9A%E3%80%8B/"/>
+    <id>https://saittoo.github.io/2017/03/29/读书笔记《JSON必知必会》/</id>
     <published>2017-03-29T07:07:17.000Z</published>
     <updated>2017-03-30T11:49:06.000Z</updated>
     
@@ -31,19 +31,19 @@
     
     </summary>
     
-      <category term="读书笔记" scheme="http://yoursite.com/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+      <category term="读书笔记" scheme="https://saittoo.github.io/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="JSON" scheme="http://yoursite.com/tags/JSON/"/>
+      <category term="JSON" scheme="https://saittoo.github.io/tags/JSON/"/>
     
-      <category term="JavaScript" scheme="http://yoursite.com/tags/JavaScript/"/>
+      <category term="JavaScript" scheme="https://saittoo.github.io/tags/JavaScript/"/>
     
   </entry>
   
   <entry>
     <title>关于CSS优先级</title>
-    <link href="http://yoursite.com/2017/01/24/%E5%85%B3%E4%BA%8ECSS%E4%BC%98%E5%85%88%E7%BA%A7/"/>
-    <id>http://yoursite.com/2017/01/24/关于CSS优先级/</id>
+    <link href="https://saittoo.github.io/2017/01/24/%E5%85%B3%E4%BA%8ECSS%E4%BC%98%E5%85%88%E7%BA%A7/"/>
+    <id>https://saittoo.github.io/2017/01/24/关于CSS优先级/</id>
     <published>2017-01-24T14:54:38.000Z</published>
     <updated>2017-03-30T11:37:34.000Z</updated>
     
@@ -55,17 +55,17 @@
     
     </summary>
     
-      <category term="读书笔记" scheme="http://yoursite.com/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+      <category term="读书笔记" scheme="https://saittoo.github.io/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="CSS" scheme="http://yoursite.com/tags/CSS/"/>
+      <category term="CSS" scheme="https://saittoo.github.io/tags/CSS/"/>
     
   </entry>
   
   <entry>
     <title>搭建hexo</title>
-    <link href="http://yoursite.com/2016/01/24/%E6%90%AD%E5%BB%BAhexo/"/>
-    <id>http://yoursite.com/2016/01/24/搭建hexo/</id>
+    <link href="https://saittoo.github.io/2016/01/24/%E6%90%AD%E5%BB%BAhexo/"/>
+    <id>https://saittoo.github.io/2016/01/24/搭建hexo/</id>
     <published>2016-01-24T15:08:25.000Z</published>
     <updated>2016-06-25T08:30:26.000Z</updated>
     
@@ -77,7 +77,7 @@
     
     </summary>
     
-      <category term="境界彼方" scheme="http://yoursite.com/categories/%E5%A2%83%E7%95%8C%E5%BD%BC%E6%96%B9/"/>
+      <category term="境界彼方" scheme="https://saittoo.github.io/categories/%E5%A2%83%E7%95%8C%E5%BD%BC%E6%96%B9/"/>
     
     
   </entry>
